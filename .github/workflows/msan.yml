@@ -21,7 +21,7 @@ jobs:
         if: runner.os == 'Linux'
         run: | 
           sudo apt-get update
-          sudo apt-get install -y readline ncurses
+          sudo apt-get install -y lib64readline-dev lib64readline8 lib64ncurses-dev lib64ncurses6 lib64ncursesw6
           
       - name: Build repository 
         run: | 
